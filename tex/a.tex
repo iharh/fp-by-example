@@ -1,0 +1,71 @@
+\documentclass[compress,red]{beamer}
+\mode<presentation>
+
+\usetheme{Warsaw}
+
+\definecolor{Red}{rgb}{1,0,0}
+\definecolor{Blue}{rgb}{0,0,1}
+\definecolor{Green}{rgb}{0,1,0}
+\definecolor{magenta}{rgb}{1,0,.6}
+\definecolor{lightblue}{rgb}{0,.5,1}
+\definecolor{lightpurple}{rgb}{.6,.4,1}
+\definecolor{gold}{rgb}{.6,.5,0}
+\definecolor{orange}{rgb}{1,0.4,0}
+\definecolor{hotpink}{rgb}{1,0,0.5}
+\definecolor{newcolor2}{rgb}{.5,.3,.5}
+\definecolor{newcolor}{rgb}{0,.3,1}
+\definecolor{newcolor3}{rgb}{1,0,.35}
+\definecolor{darkgreen1}{rgb}{0, .35, 0}
+\definecolor{darkgreen}{rgb}{0, .6, 0}
+\definecolor{darkred}{rgb}{.75,0,0}
+
+\xdefinecolor{olive}{cmyk}{0.64,0,0.95,0.4}
+\xdefinecolor{purpleish}{cmyk}{0.75,0.75,0,0}
+
+\useoutertheme[subsection=false]{smoothbars}
+
+\setbeamertemplate{footline}[text line]{} % makes the footer EMPTY
+
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{multimedia}
+\usepackage{hyperref}
+
+\usepackage{minted}
+\usepackage{amsfonts}
+\usepackage{sidecap}
+\usepackage{zed-csp}
+
+
+\newcommand{\lplus}{\ensuremath{\mathbin{+\!\!\!+}}}
+
+     
+\title{Functional Programming by Examples}
+\subtitle{The Advantages of Haskell}
+\author{Ihar I Hancharenka}
+\institute{EPAM Systems}
+\date{July 29, 2011}
+
+
+\begin{document}
+
+\begin{frame}[containsverbatim]
+\frametitle{Powerset in Haskell}
+In Haskell the powerset is:
+\begin{example}
+	\small
+	\inputminted{haskell}{src/powerset.hs}
+\end{example}
+Here's a standard polymorphic monadic HOF filterM:
+\begin{example}
+	\small
+	\inputminted{haskell}{src/filterM_hof.hs}
+\end{example}
+\end{frame}
+
+
+\end{document}

@@ -1,0 +1,6 @@
+> ghc --make -Wall ... <file_name>.hs
+...
+Warning: Pattern match(es) are non-exhaustive
+         In a case alternative:
+           Patterns not matched: Nothing
+...
